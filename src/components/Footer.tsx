@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               <span className="font-extrabold text-lg text-white">VIREO AI</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Wisdom OS: The self-improving AI executive operating system for high performers.
+              Vireo AI: The self-improving AI executive operating system for high performers.
             </p>
             <div className="text-[11px] font-mono text-emerald-400 flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5" />
@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-xs font-mono font-bold text-white uppercase tracking-wider">Product Offerings</h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#offerings" className="hover:text-white transition-colors">Health & Habit Intelligence</a></li>
-              <li><a href="#offerings" className="hover:text-white transition-colors">Skill Acceleration & PRD Builder</a></li>
+              <li><a href="#offerings" className="hover:text-white transition-colors">Skill Acceleration & Learning Feed</a></li>
               <li><a href="#offerings" className="hover:text-white transition-colors">Digital Leather Wallet & Vault</a></li>
               <li><a href="#offerings" className="hover:text-white transition-colors">100-Year Life Horizon Roadmap</a></li>
             </ul>
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
         {/* Bottom copyright line */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <div>
-            © {new Date().getFullYear()} Vireo AI (Wisdom OS). Built for executive mastery.
+            © {new Date().getFullYear()} Vireo AI. Built for executive mastery.
           </div>
           <div className="flex items-center gap-2 font-mono text-[11px]">
             <span>Designed with Fortune 500 & Silicon Valley Standards</span>

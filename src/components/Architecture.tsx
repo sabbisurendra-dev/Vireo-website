@@ -60,8 +60,8 @@ export const Architecture: React.FC = () => {
               <span className="text-slate-500">Typecheck & bundle all packages</span>
             </div>
             <div className="flex items-center justify-between p-2 rounded bg-slate-900 border border-slate-800">
-              <span className="text-blue-400">pnpm --filter @workspace/wisdom-os run dev</span>
-              <span className="text-slate-500">Run Wisdom OS locally</span>
+              <span className="text-blue-400">pnpm --filter @workspace/vireo run dev</span>
+              <span className="text-slate-500">Run Vireo AI app locally</span>
             </div>
             <div className="flex items-center justify-between p-2 rounded bg-slate-900 border border-slate-800">
               <span className="text-purple-400">pnpm --filter @workspace/api-server run dev</span>

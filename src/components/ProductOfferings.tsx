@@ -10,7 +10,7 @@ export const ProductOfferings: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400 font-mono">
             <Sparkles className="w-3.5 h-3.5" />
-            3 Core Pillars of Wisdom OS
+            3 Core Pillars of Vireo AI
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Engineered for Executive Mastery & Long-Term Compounding
@@ -73,7 +73,7 @@ export const ProductOfferings: React.FC = () => {
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2">
                   <Activity className="w-5 h-5 text-emerald-400" />
-                  <span className="text-sm font-bold text-slate-200">Health Cockpit</span>
+                  <span className="text-sm font-bold text-slate-200">Health Hub</span>
                 </div>
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">
                   Today's Score: 94/100
@@ -113,7 +113,7 @@ export const ProductOfferings: React.FC = () => {
           </div>
         </div>
 
-        {/* Pillar 2: Personal Growth & PRD Builder */}
+        {/* Pillar 2: Personal Growth & Skill Acceleration */}
         <div className="mb-20 glass-panel rounded-3xl p-6 sm:p-10 border border-slate-800/90 relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full filter blur-3xl pointer-events-none group-hover:bg-blue-500/15 transition-all"></div>
           
@@ -123,7 +123,7 @@ export const ProductOfferings: React.FC = () => {
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2">
                   <Cpu className="w-5 h-5 text-blue-400" />
-                  <span className="text-sm font-bold text-slate-200">Growth & PRD Synthesizer</span>
+                  <span className="text-sm font-bold text-slate-200">Skill Acceleration & Learning Hub</span>
                 </div>
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 font-mono">
                   3 Active Skills
@@ -134,7 +134,7 @@ export const ProductOfferings: React.FC = () => {
               <div className="space-y-3">
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">1. AI Agent Architecture (AGY SDK)</span>
+                    <span className="text-slate-200">1. AI Agent Architecture</span>
                     <span className="text-blue-400 font-mono">78%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -144,7 +144,7 @@ export const ProductOfferings: React.FC = () => {
 
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">2. Technical Product Design (PRD)</span>
+                    <span className="text-slate-200">2. System Architecture & Spec Drafting</span>
                     <span className="text-blue-400 font-mono">92%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -176,25 +176,25 @@ export const ProductOfferings: React.FC = () => {
             <div className="lg:col-span-6 lg:order-2 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-500/10 text-blue-400 text-xs font-bold font-mono border border-blue-500/20">
                 <BookOpen className="w-4 h-4" />
-                PILLAR 02 • PERSONAL DEVELOPMENT & PRDS
+                PILLAR 02 • SKILL ACCELERATION & PERSONAL GROWTH
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-extrabold text-white">
-                Skill Acceleration & <span className="text-gradient-blue">Voice-to-PRD Synthesizer</span>
+                Skill Acceleration & <span className="text-gradient-blue">Learning Feed</span>
               </h3>
 
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Draft formal PRDs, launch plans, and business notes instantly using voice or text. Vireo AI automatically structures your thoughts into executive specs while managing your top 3 daily skill progress loops.
+                Master critical competencies and track continuous growth. Vireo AI structures your learning feeds, daily skill loops, technical notes, and launch specs while keeping your progress aligned with multi-horizon roadmaps.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-blue-400 font-semibold flex items-center gap-1.5">
                     <FileText className="w-3.5 h-3.5" />
-                    PRD & Voice Builder
+                    Voice & Specification Builder
                   </div>
                   <div className="text-slate-200 text-sm font-semibold">Instant Technical Specs</div>
-                  <div className="text-xs text-slate-400">Converts voice notes into standard PRDs, launch roadmaps & prompt libraries.</div>
+                  <div className="text-xs text-slate-400">Converts voice notes into standard specs, launch roadmaps & prompt libraries.</div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">

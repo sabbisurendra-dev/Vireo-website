@@ -30,7 +30,7 @@ export const SecurityCompliance: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-white">Local-First Storage Engine</h3>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Your active user data—including PRD drafts, daily habit logs, wallet choices, and course notes—is kept safely inside your local browser storage (`localStorage` & IndexedDB).
+              Your active user data—including technical specs, skill progress logs, daily habit routines, and wallet choices—is kept safely inside your local browser storage (`localStorage` & IndexedDB).
             </p>
             <div className="pt-2 flex items-center gap-2 text-xs text-emerald-400 font-mono">
               <CheckCircle2 className="w-4 h-4" />

@@ -14,9 +14,9 @@ export const Hero: React.FC = () => {
       color: "emerald"
     },
     {
-      title: "Voice-to-PRD Synthesizer",
-      prompt: "Synthesize my voice notes into a structured Launch PRD with target metrics.",
-      response: "📄 PRD Generated: 'Vireo AI Executive Assistant v2'. Features: Local-first offline leather wallet, daily skill feed, 1/3/5/10/100-yr long range horizon.",
+      title: "Voice & Document Synthesizer",
+      prompt: "Synthesize my voice notes into a structured technical spec with target metrics.",
+      response: "📄 Specification Generated: 'Vireo AI Executive Assistant v2'. Features: Local-first offline leather wallet, daily skill feed, 1/3/5/10/100-yr long range horizon.",
       icon: Cpu,
       color: "blue"
     },
@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="text-emerald-400 font-mono">Wisdom OS v1.0 Live</span>
+            <span className="text-emerald-400 font-mono">Vireo AI Engine v1.0</span>
             <span className="text-slate-600">•</span>
             <span className="text-slate-300 flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
@@ -67,8 +67,8 @@ export const Hero: React.FC = () => {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-normal leading-relaxed">
-            Unify personal health intelligence, habit loops, voice-to-PRD synthesizers, 
-            digital ID leather wallet vaults, and 100-year roadmaps into one high-performance executive cockpit.
+            Unify personal health intelligence, habit loops, skill acceleration engines, 
+            digital ID leather wallet vaults, and 100-year roadmaps into one high-performance executive system.
           </p>
 
           {/* Action CTAs */}
@@ -165,7 +165,7 @@ export const Hero: React.FC = () => {
             <div className="glass-panel p-5 rounded-2xl border border-slate-800/80">
               <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono">10x</div>
               <div className="text-xs font-medium text-slate-400 mt-1">Productivity Velocity</div>
-              <div className="text-[10px] text-emerald-400 font-mono mt-0.5">PRDs, Habits & Roadmaps</div>
+              <div className="text-[10px] text-emerald-400 font-mono mt-0.5">Skills, Habits & Roadmaps</div>
             </div>
 
             <div className="glass-panel p-5 rounded-2xl border border-slate-800/80">

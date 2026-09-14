@@ -50,7 +50,7 @@ export const Navbar: React.FC = () => {
                 </span>
               </div>
               <span className="text-[10px] text-slate-400 tracking-wider font-mono uppercase">
-                Wisdom OS Platform
+                Vireo Executive System
               </span>
             </div>
           </a>

@@ -13,10 +13,10 @@ export const InteractiveSandbox: React.FC = () => {
   ]);
   const [weatherAlertOpen, setWeatherAlertOpen] = useState(false);
 
-  // Development & PRD Tab State
-  const [prdTopic, setPrdTopic] = useState("Autonomous AI Marketing Agent");
-  const [generatedPrd, setGeneratedPrd] = useState<string | null>(null);
-  const [isGeneratingPrd, setIsGeneratingPrd] = useState(false);
+  // Development Tab State
+  const [specTopic, setSpecTopic] = useState("Autonomous AI Executive Agent");
+  const [generatedSpec, setGeneratedSpec] = useState<string | null>(null);
+  const [isGeneratingSpec, setIsGeneratingSpec] = useState(false);
 
   // Wallet Tab State
   const [walletIsOpen, setWalletIsOpen] = useState(true);
@@ -27,22 +27,22 @@ export const InteractiveSandbox: React.FC = () => {
     setHealthTasks(healthTasks.map(t => t.id === id ? { ...t, completed: !t.completed } : t));
   };
 
-  const handleGeneratePrd = () => {
-    if (!prdTopic.trim()) return;
-    setIsGeneratingPrd(true);
+  const handleGenerateSpec = () => {
+    if (!specTopic.trim()) return;
+    setIsGeneratingSpec(true);
     setTimeout(() => {
-      setGeneratedPrd(`
-# PRD: ${prdTopic}
-**Author**: Wisdom OS Assistant
-**Status**: Draft • High Priority
-**Objective**: Build a self-improving micro-service with zero-trust local storage and real-time execution bounds.
+      setGeneratedSpec(`
+# Specification: ${specTopic}
+**Author**: Vireo Assistant
+**Status**: Active Spec • High Priority
+**Objective**: Build a self-improving executive engine with zero-trust local storage and real-time execution bounds.
 
 ## Key Modules
 1. **Core Logic**: Express 5 + Drizzle ORM PostgreSQL backend
 2. **Frontend UI**: React 19 + Tailwind CSS + Lucide Icons
 3. **Data Protection**: Local-first encrypted browser state
       `.trim());
-      setIsGeneratingPrd(false);
+      setIsGeneratingSpec(false);
     }, 600);
   };
 
@@ -57,7 +57,7 @@ export const InteractiveSandbox: React.FC = () => {
             Live Interactive Product Sandbox
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Test Drive Wisdom OS Right Now
+            Test Drive Vireo AI Right Now
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
             Interact with the core features below to experience the real-time responsiveness and executive UX of Vireo AI.
@@ -79,7 +79,7 @@ export const InteractiveSandbox: React.FC = () => {
                 }`}
               >
                 <Activity className="w-3.5 h-3.5" />
-                Goal 1: Health Cockpit
+                Goal 1: Health Hub
               </button>
 
               <button
@@ -91,7 +91,7 @@ export const InteractiveSandbox: React.FC = () => {
                 }`}
               >
                 <Cpu className="w-3.5 h-3.5" />
-                Goal 2: PRD & Skills
+                Goal 2: Skill Acceleration
               </button>
 
               <button
@@ -121,14 +121,14 @@ export const InteractiveSandbox: React.FC = () => {
           {/* Sandbox Body Content */}
           <div className="p-6 sm:p-8 bg-[#080b13] min-h-[420px]">
             
-            {/* TAB 1: HEALTH COCKPIT DEMO */}
+            {/* TAB 1: HEALTH HUB DEMO */}
             {activeTab === 'health' && (
               <div className="space-y-6">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
                   <div>
                     <h4 className="text-lg font-bold text-white flex items-center gap-2">
                       <Activity className="w-5 h-5 text-emerald-400" />
-                      Daily Health Cockpit & Priority Actionables
+                      Daily Health Hub & Priority Actionables
                     </h4>
                     <p className="text-xs text-slate-400">Click checkboxes below to update your live habit completion trajectory.</p>
                   </div>
@@ -199,52 +199,52 @@ export const InteractiveSandbox: React.FC = () => {
               </div>
             )}
 
-            {/* TAB 2: PRD & SKILLS DEMO */}
+            {/* TAB 2: SKILL ACCELERATION DEMO */}
             {activeTab === 'development' && (
               <div className="space-y-6">
                 <div>
                   <h4 className="text-lg font-bold text-white flex items-center gap-2">
                     <Cpu className="w-5 h-5 text-blue-400" />
-                    AI Voice-to-PRD Synthesizer
+                    AI Voice & Document Synthesizer
                   </h4>
-                  <p className="text-xs text-slate-400">Enter a project idea below and test the automated PRD generator.</p>
+                  <p className="text-xs text-slate-400">Enter a project or learning topic below and test the automated document generator.</p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <input
                     type="text"
-                    value={prdTopic}
-                    onChange={(e) => setPrdTopic(e.target.value)}
-                    placeholder="Enter PRD Title (e.g. AI Financial Ledger)..."
+                    value={specTopic}
+                    onChange={(e) => setSpecTopic(e.target.value)}
+                    placeholder="Enter Spec Title (e.g. AI Financial Ledger)..."
                     className="flex-1 px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-sm text-white focus:outline-none focus:border-blue-500"
                   />
                   <button
-                    onClick={handleGeneratePrd}
-                    disabled={isGeneratingPrd}
+                    onClick={handleGenerateSpec}
+                    disabled={isGeneratingSpec}
                     className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all font-mono"
                   >
-                    {isGeneratingPrd ? (
+                    {isGeneratingSpec ? (
                       <span className="animate-spin">⏳</span>
                     ) : (
                       <>
                         <Sparkles className="w-3.5 h-3.5" />
-                        Synthesize PRD
+                        Synthesize Spec
                       </>
                     )}
                   </button>
                 </div>
 
-                {generatedPrd ? (
+                {generatedSpec ? (
                   <div className="p-4 rounded-xl bg-[#0b0f19] border border-blue-500/30 text-xs font-mono text-slate-300 space-y-2 whitespace-pre-wrap">
                     <div className="text-emerald-400 font-bold flex items-center gap-1.5 border-b border-slate-800 pb-2">
                       <FileText className="w-4 h-4" />
-                      Generated PRD Specification Document
+                      Generated Specification Document
                     </div>
-                    <div>{generatedPrd}</div>
+                    <div>{generatedSpec}</div>
                   </div>
                 ) : (
                   <div className="p-8 text-center border border-dashed border-slate-800 rounded-2xl text-slate-400 text-xs font-mono">
-                    Click "Synthesize PRD" above to test the AI document builder.
+                    Click "Synthesize Spec" above to test the AI document builder.
                   </div>
                 )}
               </div>
