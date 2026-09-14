@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#040609] border-t border-slate-800 text-slate-400 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-slate-800/80">
           
           {/* Brand Info */}
           <div className="space-y-4 md:col-span-1">
@@ -35,28 +35,14 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs">
               {siteConfig.footer.productLinks.map((link, idx) => (
                 <li key={idx}>
-                  <a href={link.href} className="hover:text-white transition-colors">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Live Links */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-mono font-bold text-white uppercase tracking-wider">Repositories & App</h4>
-            <ul className="space-y-2 text-xs">
-              {siteConfig.footer.repoLinks.map((link, idx) => (
-                <li key={idx}>
                   <a
                     href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-400 transition-colors flex items-center gap-1.5"
+                    target={link.href.startsWith('http') ? '_blank' : '_self'}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="hover:text-white transition-colors flex items-center gap-1"
                   >
                     {link.name}
-                    <ExternalLink className="w-3 h-3" />
+                    {link.href.startsWith('http') && <ExternalLink className="w-3 h-3 text-blue-400" />}
                   </a>
                 </li>
               ))}
@@ -83,9 +69,6 @@ export const Footer: React.FC = () => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
           <div>
             © {new Date().getFullYear()} {siteConfig.footer.copyrightText}
-          </div>
-          <div className="flex items-center gap-2 font-mono text-[11px]">
-            <span>{siteConfig.footer.footnote}</span>
           </div>
         </div>
 

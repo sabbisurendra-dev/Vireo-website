@@ -40,10 +40,8 @@ export const siteConfig = {
   brand: {
     name: "VIREO",
     tagline: "Vireo AI",
-    badge: "Vireo AI v1.0 Live",
-    liveAppUrl: "https://sabbisurendra-dev.github.io/vireo_ai/",
-    githubRepoUrl: "https://github.com/sabbisurendra-dev/vireo_ai",
-    websiteRepoUrl: "https://github.com/sabbisurendra-dev/Vireo-website"
+    badge: "Vireo AI Live",
+    liveAppUrl: "https://sabbisurendra-dev.github.io/vireo_ai/"
   },
 
   navLinks: [
@@ -53,11 +51,11 @@ export const siteConfig = {
   ] as NavLink[],
 
   hero: {
-    badge: "Vireo AI v1.0 Live",
+    badge: "Vireo AI Live",
     securityNotice: "Local-First Zero-Trust Architecture",
     titlePrefix: "The Self-Improving",
     titleGradient: "AI Executive Operating System",
-    subheadline: "Unify personal health intelligence, habit loops, skill acceleration frameworks, and digital ID leather wallet vaults into one high-performance executive system.",
+    subheadline: "Unify personal health intelligence from smartwatches and scales, habit loops, skill acceleration frameworks, and digital ID leather wallet vaults into one high-performance executive system.",
     ctaPrimary: "Launch Live App Prototype",
     ctaSecondary: "Explore Interactive Sandbox",
     metrics: [
@@ -77,21 +75,21 @@ export const siteConfig = {
         id: "health",
         badge: "PILLAR 01 • HEALTH INTELLIGENCE",
         title: "Proactive Health Indicators & ",
-        highlightTitle: "Habit Correlation",
-        desc: "Stop tracking health in isolation. Vireo AI correlates sleep quality, exercise intensity, hydration, and nutritional loops with your cognitive output—providing supportive nudges rather than punitive alerts.",
+        highlightTitle: "Unified Device Intelligence",
+        desc: "Stop tracking health in fragmented apps. Vireo AI unifies data from all your smartwatches, fitness bands, smart scales, and smartphones—correlating sleep, activity, recovery, and hydration metrics into intelligent, data-driven nudges that optimize your daily cognitive focus and long-term vitality.",
         accentColor: "emerald",
         checkText: "Includes non-intrusive emergency & weather radar widget.",
         features: [
           {
-            title: "Multi-Horizon Metrics",
-            subtitle: "Immediate Actionables & Trends",
-            desc: "Track daily status, 7-day velocity, and 30-day trajectory.",
+            title: "Unified Multi-Device Hub",
+            subtitle: "Smartwatches, Bands & Scales",
+            desc: "Consolidates sleep, activity, HRV, recovery, and weight metrics from Apple Watch, Oura, Garmin, Fitbit & smartphones in one place.",
             iconName: "TrendingUp"
           },
           {
-            title: "Correlation Framework",
-            subtitle: "Data-Driven Nudges",
-            desc: "Identifies connected habits (e.g. 10k steps boost focus duration by 35%).",
+            title: "Holistic Nudge Framework",
+            subtitle: "Cross-Device Correlations",
+            desc: "Generates data-driven nudges taking your total sleep score, workout intensity, and recovery vitals into account (e.g. 7.5+ hrs sleep boosts focus by 35%).",
             iconName: "Flame"
           }
         ]
@@ -152,7 +150,7 @@ export const siteConfig = {
     cards: [
       {
         title: "Local-First Storage System",
-        desc: "Your active user data—including technical specs, skill progress logs, daily habit routines, and wallet choices—is kept safely inside your local browser storage (localStorage & IndexedDB).",
+        desc: "Your active user data—including technical specs, skill progress logs, daily habit routines, smartwatch metrics, and wallet choices—is kept safely inside your local browser storage (localStorage & IndexedDB).",
         badge: "Zero telemetry tracking or third-party sales.",
         iconName: "HardDrive",
         accentColor: "emerald"
@@ -166,7 +164,7 @@ export const siteConfig = {
       },
       {
         title: "GDPR & Global Health Governance",
-        desc: "Adheres to strict European GDPR data protection standards and global health privacy guidelines. Personal health vitals and habits are never logged to public servers.",
+        desc: "Adheres to strict European GDPR data protection standards and global health privacy guidelines. Personal health vitals and device streams are never logged to public servers.",
         badge: "Privacy by design at all architectural layers.",
         iconName: "Globe",
         accentColor: "purple"
@@ -187,12 +185,8 @@ export const siteConfig = {
     productLinks: [
       { name: "Health & Habit Intelligence", href: "#offerings" },
       { name: "Skill Acceleration & Learning Feed", href: "#offerings" },
-      { name: "Digital Leather Wallet & Vault", href: "#offerings" }
-    ],
-    repoLinks: [
-      { name: "Live Prototype App", href: "https://sabbisurendra-dev.github.io/vireo_ai/" },
-      { name: "Prototype GitHub Repo", href: "https://github.com/sabbisurendra-dev/vireo_ai" },
-      { name: "Showcase Website GitHub Repo", href: "https://github.com/sabbisurendra-dev/Vireo-website" }
+      { name: "Digital Leather Wallet & Vault", href: "#offerings" },
+      { name: "Launch Live Prototype App", href: "https://sabbisurendra-dev.github.io/vireo_ai/" }
     ],
     legalLinks: [
       { name: "Privacy Policy", href: "#security" },
@@ -200,7 +194,6 @@ export const siteConfig = {
       { name: "Health Data Management Terms", href: "#security" },
       { name: "Zero-Trust Security Standard", href: "#security" }
     ],
-    copyrightText: "Vireo AI. Built for executive mastery.",
-    footnote: "Designed with Fortune 500 & Silicon Valley Standards"
+    copyrightText: "Vireo AI. Built for executive mastery."
   }
 };

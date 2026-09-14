@@ -17,9 +17,9 @@ export const SkillTab: React.FC = () => {
 **Objective**: Build a self-improving executive framework with zero-trust local storage and real-time execution bounds.
 
 ## Key Modules
-1. **Core Logic**: Express 5 + Drizzle ORM PostgreSQL backend
-2. **Frontend UI**: React 19 + Tailwind CSS + Lucide Icons
-3. **Data Protection**: Local-first encrypted browser state
+1. **Executive Intelligence**: Proactive habit correlation & health vitals tracking
+2. **Skill Acceleration**: Modular learning feeds & specification drafting
+3. **Data Protection**: Local-first encrypted browser state (localStorage & IndexedDB)
       `.trim());
       setIsGeneratingSpec(false);
     }, 600);
