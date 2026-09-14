@@ -3,7 +3,6 @@ import { Hero } from './components/Hero';
 import { ProductOfferings } from './components/ProductOfferings';
 import { InteractiveSandbox } from './components/InteractiveSandbox';
 import { SecurityCompliance } from './components/SecurityCompliance';
-import { Architecture } from './components/Architecture';
 import { Footer } from './components/Footer';
 
 export function App() {
@@ -15,7 +14,6 @@ export function App() {
         <ProductOfferings />
         <InteractiveSandbox />
         <SecurityCompliance />
-        <Architecture />
       </main>
       <Footer />
     </div>

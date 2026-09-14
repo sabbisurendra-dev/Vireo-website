@@ -1,5 +1,6 @@
 import React from 'react';
-import { Activity, Cpu, Wallet, HeartPulse, TrendingUp, CheckCircle2, FileText, Lock, Sparkles, CreditCard, Compass, Flame, BookOpen } from 'lucide-react';
+import { Activity, Cpu, Wallet, HeartPulse, TrendingUp, CheckCircle2, FileText, Lock, Sparkles, CreditCard, Flame, BookOpen } from 'lucide-react';
+import { siteConfig } from '../data/siteData';
 
 export const ProductOfferings: React.FC = () => {
   return (
@@ -10,14 +11,13 @@ export const ProductOfferings: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400 font-mono">
             <Sparkles className="w-3.5 h-3.5" />
-            3 Core Pillars of Vireo AI
+            {siteConfig.pillars.sectionBadge}
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Engineered for Executive Mastery & Long-Term Compounding
+            {siteConfig.pillars.sectionTitle}
           </h2>
           <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
-            Every feature in Vireo AI is built around 3 fundamental human growth vectors: 
-            Health Intelligence, Skill Acceleration, and Secure Asset Governance.
+            {siteConfig.pillars.sectionDesc}
           </p>
         </div>
 
@@ -29,41 +29,41 @@ export const ProductOfferings: React.FC = () => {
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-bold font-mono border border-emerald-500/20">
                 <HeartPulse className="w-4 h-4" />
-                PILLAR 01 • HEALTH INTELLIGENCE
+                {siteConfig.pillars.items[0].badge}
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-extrabold text-white">
-                Proactive Health Indicators & <span className="text-gradient-emerald">Habit Correlation</span>
+                {siteConfig.pillars.items[0].title}<span className="text-gradient-emerald">{siteConfig.pillars.items[0].highlightTitle}</span>
               </h3>
 
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Stop tracking health in isolation. Vireo AI correlates sleep quality, exercise intensity, hydration, and nutritional loops with your cognitive output—providing supportive nudges rather than punitive alerts.
+                {siteConfig.pillars.items[0].desc}
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-emerald-400 font-semibold flex items-center gap-1.5">
                     <TrendingUp className="w-3.5 h-3.5" />
-                    Multi-Horizon Metrics
+                    {siteConfig.pillars.items[0].features[0].title}
                   </div>
-                  <div className="text-slate-200 text-sm font-semibold">Immediate Actionables to 1-Yr Trend</div>
-                  <div className="text-xs text-slate-400">Track daily status, 7-day velocity, 30-day trajectory & 1-yr longevity.</div>
+                  <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[0].features[0].subtitle}</div>
+                  <div className="text-xs text-slate-400">{siteConfig.pillars.items[0].features[0].desc}</div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-emerald-400 font-semibold flex items-center gap-1.5">
                     <Flame className="w-3.5 h-3.5" />
-                    Correlation Engine
+                    {siteConfig.pillars.items[0].features[1].title}
                   </div>
-                  <div className="text-slate-200 text-sm font-semibold">Data-Driven Nudges</div>
-                  <div className="text-xs text-slate-400">Identifies connected habits (e.g. 10k steps boost focus duration by 35%).</div>
+                  <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[0].features[1].subtitle}</div>
+                  <div className="text-xs text-slate-400">{siteConfig.pillars.items[0].features[1].desc}</div>
                 </div>
               </div>
 
               <div className="pt-2">
                 <div className="flex items-center gap-2 text-xs text-slate-400 font-mono">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  Includes non-intrusive emergency & weather radar widget.
+                  {siteConfig.pillars.items[0].checkText}
                 </div>
               </div>
             </div>
@@ -162,48 +162,39 @@ export const ProductOfferings: React.FC = () => {
                   </div>
                 </div>
               </div>
-
-              {/* 100-Year Life Horizon Banner */}
-              <div className="p-3 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-between text-xs text-slate-300">
-                <span className="flex items-center gap-1.5 font-mono text-blue-400">
-                  <Compass className="w-4 h-4" />
-                  Horizon Roadmap
-                </span>
-                <span className="text-slate-400">1 / 3 / 5 / 10 / 25 / 100 Years</span>
-              </div>
             </div>
 
             <div className="lg:col-span-6 lg:order-2 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-500/10 text-blue-400 text-xs font-bold font-mono border border-blue-500/20">
                 <BookOpen className="w-4 h-4" />
-                PILLAR 02 • SKILL ACCELERATION & PERSONAL GROWTH
+                {siteConfig.pillars.items[1].badge}
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-extrabold text-white">
-                Skill Acceleration & <span className="text-gradient-blue">Learning Feed</span>
+                {siteConfig.pillars.items[1].title}<span className="text-gradient-blue">{siteConfig.pillars.items[1].highlightTitle}</span>
               </h3>
 
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Master critical competencies and track continuous growth. Vireo AI structures your learning feeds, daily skill loops, technical notes, and launch specs while keeping your progress aligned with multi-horizon roadmaps.
+                {siteConfig.pillars.items[1].desc}
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-blue-400 font-semibold flex items-center gap-1.5">
                     <FileText className="w-3.5 h-3.5" />
-                    Voice & Specification Builder
+                    {siteConfig.pillars.items[1].features[0].title}
                   </div>
-                  <div className="text-slate-200 text-sm font-semibold">Instant Technical Specs</div>
-                  <div className="text-xs text-slate-400">Converts voice notes into standard specs, launch roadmaps & prompt libraries.</div>
+                  <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[1].features[0].subtitle}</div>
+                  <div className="text-xs text-slate-400">{siteConfig.pillars.items[1].features[0].desc}</div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-blue-400 font-semibold flex items-center gap-1.5">
-                    <Compass className="w-3.5 h-3.5" />
-                    100-Year Life Horizon
+                    <BookOpen className="w-3.5 h-3.5" />
+                    {siteConfig.pillars.items[1].features[1].title}
                   </div>
-                  <div className="text-slate-200 text-sm font-semibold">Long-Range Compounding</div>
-                  <div className="text-xs text-slate-400">Align daily tasks with 1, 3, 5, 10, 25, and 100-year legacy visions.</div>
+                  <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[1].features[1].subtitle}</div>
+                  <div className="text-xs text-slate-400">{siteConfig.pillars.items[1].features[1].desc}</div>
                 </div>
               </div>
             </div>
@@ -218,34 +209,34 @@ export const ProductOfferings: React.FC = () => {
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-amber-500/10 text-amber-400 text-xs font-bold font-mono border border-amber-500/20">
                 <Wallet className="w-4 h-4" />
-                PILLAR 03 • DIGITAL LEATHER WALLET & VAULT
+                {siteConfig.pillars.items[2].badge}
               </div>
 
               <h3 className="text-2xl sm:text-4xl font-extrabold text-white">
-                Tactile Leather Wallet Experience & <span className="text-gradient-amber">Encrypted Asset Vault</span>
+                {siteConfig.pillars.items[2].title}<span className="text-gradient-amber">{siteConfig.pillars.items[2].highlightTitle}</span>
               </h3>
 
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                Replaces your physical pocket wallet with a digital leather wallet experience holding authenticated scanned copies of your PAN, Aadhaar, Driving License, Corporate IDs, and instant Indian UPI payment shortcuts.
+                {siteConfig.pillars.items[2].desc}
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-amber-400 font-semibold flex items-center gap-1.5">
                     <CreditCard className="w-3.5 h-3.5" />
-                    Tactile Wallet Experience
+                    {siteConfig.pillars.items[2].features[0].title}
                   </div>
-                  <div className="text-slate-200 text-sm font-semibold">Real Leather UI Animation</div>
-                  <div className="text-xs text-slate-400">Opens smoothly to display verified identity cards, permits & UPI payment apps.</div>
+                  <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[2].features[0].subtitle}</div>
+                  <div className="text-xs text-slate-400">{siteConfig.pillars.items[2].features[0].desc}</div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-amber-400 font-semibold flex items-center gap-1.5">
                     <Lock className="w-3.5 h-3.5" />
-                    Frictional Privacy Vault
+                    {siteConfig.pillars.items[2].features[1].title}
                   </div>
-                  <div className="text-slate-200 text-sm font-semibold">Protected Assets & Liabilities</div>
-                  <div className="text-xs text-slate-400">Net worth, bank accounts, property deeds & mutual funds kept hidden behind biometric locks.</div>
+                  <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[2].features[1].subtitle}</div>
+                  <div className="text-xs text-slate-400">{siteConfig.pillars.items[2].features[1].desc}</div>
                 </div>
               </div>
             </div>
