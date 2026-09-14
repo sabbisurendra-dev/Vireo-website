@@ -3,13 +3,6 @@ export interface NavLink {
   href: string;
 }
 
-export interface PromptSample {
-  title: string;
-  prompt: string;
-  response: string;
-  color: 'emerald' | 'blue' | 'amber';
-}
-
 export interface MetricStat {
   value: string;
   label: string;
@@ -47,7 +40,6 @@ export const siteConfig = {
   brand: {
     name: "VIREO",
     tagline: "Vireo AI",
-    subtagline: "Vireo Executive System",
     badge: "Vireo AI v1.0 Live",
     liveAppUrl: "https://sabbisurendra-dev.github.io/vireo_ai/",
     githubRepoUrl: "https://github.com/sabbisurendra-dev/vireo_ai",
@@ -63,33 +55,11 @@ export const siteConfig = {
   hero: {
     badge: "Vireo AI v1.0 Live",
     securityNotice: "Local-First Zero-Trust Architecture",
-    mainHeadline: "The Self-Improving AI Executive Operating System",
+    titlePrefix: "The Self-Improving",
+    titleGradient: "AI Executive Operating System",
     subheadline: "Unify personal health intelligence, habit loops, skill acceleration frameworks, and digital ID leather wallet vaults into one high-performance executive system.",
     ctaPrimary: "Launch Live App Prototype",
     ctaSecondary: "Explore Interactive Sandbox",
-    assistantModeTitle: "Vireo Assistant • Executive Mode",
-    assistantStatus: "Active System",
-    prompts: [
-      {
-        title: "Health & Habit Nudge",
-        prompt: "Analyze my 7-day sleep vs deep work correlation and suggest immediate actionables.",
-        response: "📊 Correlation Found (+0.84): 7.5+ hrs sleep boosts morning deep work by 42%. Actionable: Hydrate by 8:00 AM, complete 45-min workout, prep 3 priority tasks.",
-        color: "emerald"
-      },
-      {
-        title: "Voice & Document Builder",
-        prompt: "Synthesize my voice notes into a structured technical spec with target metrics.",
-        response: "📄 Specification Generated: 'Vireo AI Executive Assistant v2'. Features: Local-first offline leather wallet, daily skill feed.",
-        color: "blue"
-      },
-      {
-        title: "Leather Wallet Vault Access",
-        prompt: "Authenticate and present verified Scanned PAN & Corporate ID cards.",
-        response: "🔒 Verified Access Granted: Displaying encrypted identity cards with DPDP/GDPR compliant local storage hash. Liabilities hidden.",
-        color: "amber"
-      }
-    ] as PromptSample[],
-
     metrics: [
       { value: "10x", label: "Productivity Velocity", subtext: "Skills, Habits & Focus", color: "emerald" },
       { value: "100%", label: "Zero-Trust Privacy", subtext: "Local-First Storage", color: "blue" },

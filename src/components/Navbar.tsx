@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ExternalLink, Menu, X, Terminal } from 'lucide-react';
+import { ExternalLink, Menu, X, Play } from 'lucide-react';
 import { siteConfig } from '../data/siteData';
 
 export const Navbar: React.FC = () => {
@@ -34,17 +34,12 @@ export const Navbar: React.FC = () => {
                 <span className="w-2.5 h-2.5 rounded-full bg-slate-400 -ml-1"></span>
               </div>
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-xl tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:via-blue-400 group-hover:to-purple-400 transition-all">
-                  {siteConfig.brand.name}
-                </span>
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                  AI
-                </span>
-              </div>
-              <span className="text-[10px] text-slate-400 tracking-wider font-mono uppercase">
-                {siteConfig.brand.subtagline}
+            <div className="flex items-center gap-2">
+              <span className="font-extrabold text-2xl tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:via-blue-400 group-hover:to-purple-400 transition-all">
+                {siteConfig.brand.name}
+              </span>
+              <span className="text-xs font-extrabold px-2.5 py-0.5 rounded-md bg-gradient-to-r from-emerald-500/20 via-blue-500/20 to-purple-500/20 text-blue-400 border border-blue-500/30 font-mono tracking-wider">
+                AI
               </span>
             </div>
           </a>
@@ -68,7 +63,7 @@ export const Navbar: React.FC = () => {
               href="#sandbox"
               className="px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-lg border border-slate-800 hover:border-slate-700 bg-slate-900/50 hover:bg-slate-800/60 transition-all flex items-center gap-2"
             >
-              <Terminal className="w-3.5 h-3.5 text-emerald-400" />
+              <Play className="w-3.5 h-3.5 text-emerald-400 fill-emerald-400/20" />
               Try Sandbox
             </a>
 

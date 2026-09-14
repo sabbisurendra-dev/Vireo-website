@@ -1,17 +1,8 @@
-import React, { useState } from 'react';
-import { Sparkles, ArrowRight, ShieldCheck, Activity, Cpu, Wallet, Play } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, ShieldCheck, Play } from 'lucide-react';
 import { siteConfig } from '../data/siteData';
 
 export const Hero: React.FC = () => {
-  const [activePrompt, setActivePrompt] = useState(0);
-  const [isSynthesizing, setIsSynthesizing] = useState(false);
-
-  const handlePromptClick = (index: number) => {
-    setIsSynthesizing(true);
-    setActivePrompt(index);
-    setTimeout(() => setIsSynthesizing(false), 400);
-  };
-
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-[#07090e]">
       {/* Dynamic Background Glow Spheres */}
@@ -20,7 +11,7 @@ export const Hero: React.FC = () => {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-4xl mx-auto space-y-6">
+        <div className="text-center max-w-4xl mx-auto space-y-8">
           
           {/* Top Pill Announcement */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 shadow-inner text-xs font-semibold text-slate-300">
@@ -38,8 +29,8 @@ export const Hero: React.FC = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
-            The Self-Improving <br />
-            <span className="text-gradient-tri">{siteConfig.hero.mainHeadline}</span>
+            {siteConfig.hero.titlePrefix} <br />
+            <span className="text-gradient-tri">{siteConfig.hero.titleGradient}</span>
           </h1>
 
           {/* Subheadline */}
@@ -48,7 +39,7 @@ export const Hero: React.FC = () => {
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <a
               href={siteConfig.brand.liveAppUrl}
               target="_blank"
@@ -68,76 +59,8 @@ export const Hero: React.FC = () => {
             </a>
           </div>
 
-          {/* Interactive AI Prompt Simulator Widget */}
-          <div className="pt-10 max-w-3xl mx-auto text-left">
-            <div className="glass-panel rounded-2xl p-4 sm:p-6 border border-slate-800/80 shadow-2xl relative">
-              <div className="flex items-center justify-between border-b border-slate-800/80 pb-3 mb-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                  <div className="w-3 h-3 rounded-full bg-amber-500/80"></div>
-                  <div className="w-3 h-3 rounded-full bg-emerald-500/80"></div>
-                  <span className="ml-2 text-xs font-mono text-slate-400">{siteConfig.hero.assistantModeTitle}</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-slate-400 font-mono">
-                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  {siteConfig.hero.assistantStatus}
-                </div>
-              </div>
-
-              {/* Sample Prompt Selector Tabs */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {siteConfig.hero.prompts.map((item, idx) => {
-                  const IconComponent = idx === 0 ? Activity : idx === 1 ? Cpu : Wallet;
-                  const isActive = activePrompt === idx;
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => handlePromptClick(idx)}
-                      className={`text-xs px-3 py-1.5 rounded-lg border transition-all flex items-center gap-1.5 font-medium ${
-                        isActive
-                          ? 'bg-blue-500/10 border-blue-500/50 text-blue-300 shadow-sm'
-                          : 'bg-slate-900/60 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                      }`}
-                    >
-                      <IconComponent className="w-3.5 h-3.5" />
-                      {item.title}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Simulated Output Container */}
-              <div className="bg-[#0b0f19] rounded-xl p-4 border border-slate-800/90 font-sans space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center text-xs font-bold text-slate-300 shrink-0">
-                    YOU
-                  </div>
-                  <div className="text-sm text-slate-200 pt-1 font-medium">
-                    "{siteConfig.hero.prompts[activePrompt].prompt}"
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 border-t border-slate-800/60 pt-3">
-                  <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-emerald-500 via-blue-500 to-purple-600 flex items-center justify-center text-white shrink-0 shadow-md">
-                    <Sparkles className="w-4 h-4" />
-                  </div>
-                  <div className="text-sm text-slate-300 pt-0.5 leading-relaxed">
-                    {isSynthesizing ? (
-                      <div className="flex items-center gap-2 text-slate-400 text-xs font-mono py-1">
-                        <span className="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
-                        Processing offline context & habit correlation framework...
-                      </div>
-                    ) : (
-                      <span>{siteConfig.hero.prompts[activePrompt].response}</span>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Metrics Stats Banner */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 text-left max-w-3xl mx-auto">
             {siteConfig.hero.metrics.map((stat, idx) => (
               <div key={idx} className="glass-panel p-5 rounded-2xl border border-slate-800/80">
                 <div className="text-2xl sm:text-3xl font-extrabold text-white font-mono">{stat.value}</div>
