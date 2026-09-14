@@ -55,7 +55,7 @@ export const siteConfig = {
     securityNotice: "Local-First Private Security",
     titlePrefix: "The Self-Improving",
     titleGradient: "AI Personal Assistant",
-    subheadline: "Unify personal health intelligence from smartwatches and scales, habit loops, skill acceleration frameworks, and digital ID wallet vaults into your personal AI assistant.",
+    subheadline: "Connected health intelligence, continuous skill growth, and secure digital identity—unified in your personal AI assistant.",
     ctaPrimary: "Launch Live App Prototype",
     ctaSecondary: "Explore Interactive Sandbox",
     metrics: [
@@ -67,7 +67,7 @@ export const siteConfig = {
 
   pillars: {
     sectionBadge: "3 Core Pillars of Vireo AI",
-    sectionTitle: "Designed for Executive Mastery & Personal Growth",
+    sectionTitle: "Designed for Personal Growth",
     sectionDesc: "Every feature in Vireo AI is built around 3 fundamental human growth vectors: Health Intelligence, Skill Acceleration, and Secure Asset Governance.",
 
     items: [
@@ -104,16 +104,16 @@ export const siteConfig = {
         checkText: "Supports customized daily learning loops.",
         features: [
           {
-            title: "Voice & Specification Builder",
-            subtitle: "Instant Technical Specs",
-            desc: "Converts voice notes into standard specs, launch plans & prompt libraries.",
-            iconName: "FileText"
-          },
-          {
             title: "Skill Progression Hub",
             subtitle: "Continuous Competency",
             desc: "Track active skills in progress with structured milestones.",
             iconName: "BookOpen"
+          },
+          {
+            title: "Voice & Specification Builder",
+            subtitle: "Instant Technical Specs",
+            desc: "Converts voice notes into standard specs, launch plans & prompt libraries.",
+            iconName: "FileText"
           }
         ]
       },
@@ -194,6 +194,6 @@ export const siteConfig = {
       { name: "Health Data Management Terms", href: "#security" },
       { name: "Local Security Standard", href: "#security" }
     ],
-    copyrightText: "Vireo AI. Built for executive mastery."
+    copyrightText: "Vireo AI. Built for personal growth."
   }
 };

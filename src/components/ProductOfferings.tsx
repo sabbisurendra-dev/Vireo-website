@@ -141,7 +141,7 @@ export const ProductOfferings: React.FC = () => {
               <div className="space-y-3">
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">1. AI Agent Development</span>
+                    <span className="text-slate-200">1. Latest Tech explained</span>
                     <span className="text-blue-400 font-mono">78%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -151,7 +151,7 @@ export const ProductOfferings: React.FC = () => {
 
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">2. System Design & Spec Drafting</span>
+                    <span className="text-slate-200">2. Product PRDs and AI</span>
                     <span className="text-blue-400 font-mono">92%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -161,7 +161,7 @@ export const ProductOfferings: React.FC = () => {
 
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">3. Indian Culinary & Nutrition Reference</span>
+                    <span className="text-slate-200">3. Indian Cooking Foundations</span>
                     <span className="text-blue-400 font-mono">65%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -188,7 +188,7 @@ export const ProductOfferings: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-blue-400 font-semibold flex items-center gap-1.5">
-                    <FileText className="w-3.5 h-3.5" />
+                    <BookOpen className="w-3.5 h-3.5" />
                     {siteConfig.pillars.items[1].features[0].title}
                   </div>
                   <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[1].features[0].subtitle}</div>
@@ -197,7 +197,7 @@ export const ProductOfferings: React.FC = () => {
 
                 <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                   <div className="text-xs font-mono text-blue-400 font-semibold flex items-center gap-1.5">
-                    <BookOpen className="w-3.5 h-3.5" />
+                    <FileText className="w-3.5 h-3.5" />
                     {siteConfig.pillars.items[1].features[1].title}
                   </div>
                   <div className="text-slate-200 text-sm font-semibold">{siteConfig.pillars.items[1].features[1].subtitle}</div>

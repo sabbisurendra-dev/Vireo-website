@@ -22,7 +22,7 @@ export const InteractiveSandbox: React.FC = () => {
             Test Drive Vireo AI Right Now
           </h2>
           <p className="text-slate-400 text-base sm:text-lg">
-            Interact with the core features below to experience the real-time responsiveness and executive UX of Vireo AI.
+            Interact with the core features below to experience the real-time responsiveness and seamless UX of Vireo AI.
           </p>
         </div>
 

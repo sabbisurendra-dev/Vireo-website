@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Cpu, Sparkles, FileText } from 'lucide-react';
 
 export const SkillTab: React.FC = () => {
-  const [specTopic, setSpecTopic] = useState("Autonomous AI Executive Agent");
+  const [specTopic, setSpecTopic] = useState("Autonomous AI Personal Agent");
   const [generatedSpec, setGeneratedSpec] = useState<string | null>(null);
   const [isGeneratingSpec, setIsGeneratingSpec] = useState(false);
 
@@ -14,10 +14,10 @@ export const SkillTab: React.FC = () => {
 # Specification: ${specTopic}
 **Author**: Vireo Assistant
 **Status**: Active Spec • High Priority
-**Objective**: Build a self-improving executive framework with zero-trust local storage and real-time execution bounds.
+**Objective**: Build a self-improving personal agent framework with zero-trust local storage and real-time execution bounds.
 
 ## Key Modules
-1. **Executive Intelligence**: Proactive habit correlation & health vitals tracking
+1. **Personal Intelligence**: Proactive habit correlation & health vitals tracking
 2. **Skill Acceleration**: Modular learning feeds & specification drafting
 3. **Data Protection**: Local-first encrypted browser state (localStorage & IndexedDB)
       `.trim());
