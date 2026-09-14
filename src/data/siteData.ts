@@ -122,14 +122,14 @@ export const siteConfig = {
         badge: "PILLAR 03 • DIGITAL WALLET & VAULT",
         title: "Smart Digital Wallet Experience & ",
         highlightTitle: "Encrypted Asset Vault",
-        desc: "Replaces your physical pocket wallet with a digital wallet experience holding authenticated scanned copies of your PAN, Aadhaar, Driving License, Corporate IDs, and instant Indian UPI payment shortcuts.",
+        desc: "Replaces your physical pocket wallet with a digital wallet experience holding authenticated digital copies of your PAN, Aadhaar, Driving License, Corporate IDs, and instant Indian UPI payment shortcuts.",
         accentColor: "amber",
         checkText: "Biometrically protected Assets & Liabilities ledger.",
         features: [
           {
             title: "Smart Wallet Experience",
-            subtitle: "Digital Wallet Animation",
-            desc: "Opens smoothly to display verified identity cards, permits & UPI payment apps.",
+            subtitle: "Digital Wallet",
+            desc: "Display verified identity cards, permits & UPI payment apps.",
             iconName: "CreditCard"
           },
           {
