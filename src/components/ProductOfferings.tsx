@@ -241,9 +241,9 @@ export const ProductOfferings: React.FC = () => {
               </div>
             </div>
 
-            {/* Visual Smart Digital Wallet Card */}
-            <div className="bg-[#0b0f19] rounded-2xl p-6 space-y-4 border border-amber-900/40 relative shadow-2xl">
-              <div className="flex items-center justify-between border-b border-amber-900/40 pb-3">
+            {/* Visual Smart Digital Wallet Card (Clean Image Previews) */}
+            <div className="bg-[#0b0f19] rounded-2xl p-5 border border-amber-900/40 relative shadow-2xl space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2">
                   <Wallet className="w-5 h-5 text-amber-400" />
                   <span className="text-sm font-bold text-amber-200">Smart Digital Wallet</span>
@@ -253,44 +253,26 @@ export const ProductOfferings: React.FC = () => {
                 </span>
               </div>
 
-              {/* Stacked Cards Preview */}
-              <div className="space-y-2.5">
-                <div className="p-3.5 rounded-xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-700/80 flex items-center justify-between shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-orange-500/20 border border-orange-500/30 flex items-center justify-center font-bold text-orange-400 text-xs font-mono">
-                      ID
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-white">Government Aadhaar & PAN Card</div>
-                      <div className="text-[10px] text-slate-400 font-mono">Verified Scan • XXXX-XXXX-4892</div>
-                    </div>
-                  </div>
-                  <span className="text-xs text-emerald-400 font-mono flex items-center gap-1 font-semibold">
-                    Valid
-                  </span>
+              {/* Grid of Clean Credential Card Images */}
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
+                  <img src="./generated/aadhaar-card.png" alt="Aadhaar Card" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
+                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">Aadhaar Card</div>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-700/80 flex items-center justify-between shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-blue-500/20 border border-blue-500/30 flex items-center justify-center font-bold text-blue-400 text-xs font-mono">
-                      DL
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-white">Driving License & Permit</div>
-                      <div className="text-[10px] text-slate-400 font-mono">DL-042024-XXXXX</div>
-                    </div>
-                  </div>
-                  <span className="text-xs text-emerald-400 font-mono flex items-center gap-1 font-semibold">
-                    Valid
-                  </span>
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
+                  <img src="./generated/pan-card.png" alt="PAN Card" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
+                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">PAN Card</div>
                 </div>
 
-                <div className="p-3.5 rounded-xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-900 border border-amber-700/40 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs font-mono text-amber-300">
-                    <Lock className="w-3.5 h-3.5" />
-                    Assets & Liabilities Ledger
-                  </div>
-                  <span className="text-[10px] text-slate-400 font-mono">Requires Secondary Auth</span>
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
+                  <img src="./generated/driving-licence-card.png" alt="Driving License" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
+                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">Driving License</div>
+                </div>
+
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
+                  <img src="./generated/company-id-card.png" alt="Corporate Employee ID" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
+                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">Corporate ID</div>
                 </div>
               </div>
             </div>

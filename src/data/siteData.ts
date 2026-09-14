@@ -52,7 +52,7 @@ export const siteConfig = {
 
   hero: {
     badge: "Vireo AI Live",
-    securityNotice: "Local-First Zero-Trust Security",
+    securityNotice: "Local-First Private Security",
     titlePrefix: "The Self-Improving",
     titleGradient: "AI Personal Assistant",
     subheadline: "Unify personal health intelligence from smartwatches and scales, habit loops, skill acceleration frameworks, and digital ID wallet vaults into your personal AI assistant.",
@@ -60,7 +60,7 @@ export const siteConfig = {
     ctaSecondary: "Explore Interactive Sandbox",
     metrics: [
       { value: "10x", label: "Productivity Velocity", subtext: "Skills, Habits & Focus", color: "emerald" },
-      { value: "100%", label: "Zero-Trust Privacy", subtext: "Local-First Storage", color: "blue" },
+      { value: "100%", label: "Complete Privacy", subtext: "Local Storage Security", color: "blue" },
       { value: "Compliant", label: "DPDP & GDPR Framework", subtext: "Health Data Governance", color: "emerald" }
     ] as MetricStat[]
   },
@@ -133,7 +133,7 @@ export const siteConfig = {
             iconName: "CreditCard"
           },
           {
-            title: "Frictional Privacy Vault",
+            title: "Secure Private Vault",
             subtitle: "Protected Assets & Liabilities",
             desc: "Net worth, bank accounts, property deeds & mutual funds kept hidden behind biometric locks.",
             iconName: "Lock"
@@ -145,11 +145,11 @@ export const siteConfig = {
 
   compliance: {
     sectionBadge: "Security, Privacy & Public Regulations",
-    sectionTitle: "Zero-Trust Privacy & Regulatory Compliance",
+    sectionTitle: "Fully Private & Regulatory Compliance",
     sectionDesc: "Built from the ground up to respect user sovereignty over personal health, identity proofs, and financial records.",
     cards: [
       {
-        title: "Local-First Storage System",
+        title: "Local Storage Security",
         desc: "Your active user data—including technical specs, skill progress logs, daily habit routines, smartwatch metrics, and wallet choices—is kept safely inside your local browser storage (localStorage & IndexedDB).",
         badge: "Zero telemetry tracking or third-party sales.",
         iconName: "HardDrive",
@@ -170,7 +170,7 @@ export const siteConfig = {
         accentColor: "purple"
       },
       {
-        title: "Frictional Secondary Security Vault",
+        title: "Fully Private Vault",
         desc: "Sensitive financial ledgers (Assets & Liabilities, property documents, mutual fund statements) are kept intentionally behind secondary authentication steps for peace of mind.",
         badge: "Protection against casual shoulder-surfing.",
         iconName: "Key",
@@ -192,7 +192,7 @@ export const siteConfig = {
       { name: "Privacy Policy", href: "#security" },
       { name: "Digital Data Protection Notice", href: "#security" },
       { name: "Health Data Management Terms", href: "#security" },
-      { name: "Zero-Trust Security Standard", href: "#security" }
+      { name: "Local Security Standard", href: "#security" }
     ],
     copyrightText: "Vireo AI. Built for executive mastery."
   }

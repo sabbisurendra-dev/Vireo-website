@@ -4,7 +4,14 @@ import { Wallet, Lock, Unlock } from 'lucide-react';
 export const WalletTab: React.FC = () => {
   const [walletIsOpen, setWalletIsOpen] = useState(true);
   const [unlockedAssets, setUnlockedAssets] = useState(false);
-  const [selectedCard, setSelectedCard] = useState<string | null>("Aadhaar & PAN");
+  const [selectedCard, setSelectedCard] = useState<string>("Aadhaar");
+
+  const cardsData: Record<string, { title: string; image: string }> = {
+    "Aadhaar": { title: "Government Aadhaar Card", image: "./generated/aadhaar-card.png" },
+    "PAN Card": { title: "PAN Card", image: "./generated/pan-card.png" },
+    "Driving License": { title: "Driving License & Permit", image: "./generated/driving-licence-card.png" },
+    "Corporate Employee ID": { title: "Corporate Employee ID Card", image: "./generated/company-id-card.png" }
+  };
 
   return (
     <div className="space-y-6">
@@ -26,34 +33,43 @@ export const WalletTab: React.FC = () => {
       </div>
 
       {walletIsOpen ? (
-        <div className="bg-[#0b0f19] p-6 rounded-2xl border border-amber-900/40 space-y-4 shadow-xl">
+        <div className="bg-[#0b0f19] p-6 rounded-2xl border border-amber-900/40 space-y-5 shadow-xl">
           <div className="text-xs font-mono text-amber-300 font-semibold border-b border-amber-900/40 pb-2">
-            👝 Digital Wallet • Inside View
+            👝 Digital Wallet • Select Document Card Below
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {["Aadhaar & PAN", "Driving License", "Corporate Employee ID"].map((card) => (
-              <div
-                key={card}
-                onClick={() => setSelectedCard(card)}
-                className={`p-3 rounded-xl border cursor-pointer transition-all ${
-                  selectedCard === card
-                    ? 'bg-amber-950/60 border-amber-500 text-amber-200 shadow-md'
+          {/* Document Selector Buttons */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {Object.keys(cardsData).map((cardKey) => (
+              <button
+                key={cardKey}
+                onClick={() => setSelectedCard(cardKey)}
+                className={`p-3 rounded-xl border text-left transition-all ${
+                  selectedCard === cardKey
+                    ? 'bg-amber-950/70 border-amber-500 text-amber-200 shadow-md ring-1 ring-amber-500/50'
                     : 'bg-slate-900/80 border-slate-800 text-slate-300 hover:border-slate-700'
                 }`}
               >
-                <div className="text-xs font-bold">{card}</div>
+                <div className="text-xs font-bold">{cardKey}</div>
                 <div className="text-[10px] text-slate-400 font-mono mt-1">Status: Verified Scan</div>
-              </div>
+              </button>
             ))}
           </div>
 
-          {/* Selected Document Details */}
-          {selectedCard && (
-            <div className="p-4 rounded-xl bg-slate-950/80 border border-slate-800 text-xs font-mono space-y-2 text-slate-300">
-              <div className="text-emerald-400 font-bold">📄 Scanned Document View: {selectedCard}</div>
-              <div>Document ID Hash: 0x9f82a...4b12</div>
-              <div>DPDP Compliance: Zero-Knowledge Hash Stored Locally in Browser Storage.</div>
+          {/* Selected Document Card Image View */}
+          {selectedCard && cardsData[selectedCard] && (
+            <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-3">
+              <div className="flex items-center justify-between text-xs font-bold text-amber-300 border-b border-slate-800 pb-2">
+                <span>📄 {cardsData[selectedCard].title}</span>
+                <span className="text-emerald-400 text-[10px] font-mono">Verified Scan</span>
+              </div>
+              <div className="rounded-xl overflow-hidden border border-slate-800 shadow-2xl max-w-lg mx-auto bg-slate-900">
+                <img
+                  src={cardsData[selectedCard].image}
+                  alt={cardsData[selectedCard].title}
+                  className="w-full h-auto object-contain max-h-72"
+                />
+              </div>
             </div>
           )}
 

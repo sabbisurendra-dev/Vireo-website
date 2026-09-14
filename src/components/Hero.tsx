@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ShieldCheck, Play } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 import { siteConfig } from '../data/siteData';
 
 export const Hero: React.FC = () => {
@@ -12,20 +12,6 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto space-y-8">
-          
-          {/* Top Pill Announcement */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 shadow-inner text-xs font-semibold text-slate-300">
-            <span className="flex h-2 w-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            <span className="text-emerald-400 font-mono">{siteConfig.hero.badge}</span>
-            <span className="text-slate-600">•</span>
-            <span className="text-slate-300 flex items-center gap-1">
-              <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
-              {siteConfig.hero.securityNotice}
-            </span>
-          </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
