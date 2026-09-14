@@ -2,6 +2,13 @@ import React from 'react';
 import { Activity, Cpu, Wallet, HeartPulse, TrendingUp, CheckCircle2, FileText, Lock, Sparkles, CreditCard, Flame, BookOpen } from 'lucide-react';
 import { siteConfig } from '../data/siteData';
 
+const getImagePath = (fileName: string) => {
+  const base = import.meta.env.BASE_URL.endsWith('/') 
+    ? import.meta.env.BASE_URL 
+    : import.meta.env.BASE_URL + '/';
+  return `${base}generated/${fileName}`;
+};
+
 export const ProductOfferings: React.FC = () => {
   return (
     <section id="offerings" className="py-24 bg-[#07090e] relative border-t border-slate-800/60">
@@ -241,38 +248,46 @@ export const ProductOfferings: React.FC = () => {
               </div>
             </div>
 
-            {/* Visual Smart Digital Wallet Card (Clean Image Previews) */}
-            <div className="bg-[#0b0f19] rounded-2xl p-5 border border-amber-900/40 relative shadow-2xl space-y-4">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+            {/* Visual Smart Digital Wallet Card (Crisp Responsive Image Layout) */}
+            <div className="lg:col-span-6 bg-[#0b0f19] rounded-2xl p-6 border border-amber-900/40 relative shadow-2xl space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-800/80 pb-3">
                 <div className="flex items-center gap-2">
                   <Wallet className="w-5 h-5 text-amber-400" />
                   <span className="text-sm font-bold text-amber-200">Smart Digital Wallet</span>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                <span className="text-[10px] font-mono px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/30">
                   AES-256 ENCRYPTED
                 </span>
               </div>
 
-              {/* Grid of Clean Credential Card Images */}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
-                  <img src="./generated/aadhaar-card.png" alt="Aadhaar Card" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
-                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">Aadhaar Card</div>
+              {/* Grid of Clean High-Res Credential Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2 text-center shadow-lg group hover:border-amber-500/50 transition-all flex flex-col items-center">
+                  <div className="w-full h-36 bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                    <img src={getImagePath('aadhaar-card.png')} alt="Government Aadhaar Card" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="mt-2.5 text-xs font-bold text-slate-200">Aadhaar Card</div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
-                  <img src="./generated/pan-card.png" alt="PAN Card" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
-                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">PAN Card</div>
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2 text-center shadow-lg group hover:border-amber-500/50 transition-all flex flex-col items-center">
+                  <div className="w-full h-36 bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                    <img src={getImagePath('pan-card.png')} alt="PAN Card" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="mt-2.5 text-xs font-bold text-slate-200">PAN Card</div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
-                  <img src="./generated/driving-licence-card.png" alt="Driving License" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
-                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">Driving License</div>
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2 text-center shadow-lg group hover:border-amber-500/50 transition-all flex flex-col items-center">
+                  <div className="w-full h-36 bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                    <img src={getImagePath('driving-licence-card.png')} alt="Driving License" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="mt-2.5 text-xs font-bold text-slate-200">Driving License</div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/90 shadow-md group hover:border-amber-500/50 transition-all">
-                  <img src="./generated/company-id-card.png" alt="Corporate Employee ID" className="w-full h-28 object-cover group-hover:scale-105 transition-transform" />
-                  <div className="p-2 text-center text-[11px] font-bold text-slate-200">Corporate ID</div>
+                <div className="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 p-2 text-center shadow-lg group hover:border-amber-500/50 transition-all flex flex-col items-center">
+                  <div className="w-full h-36 bg-slate-900 rounded-lg overflow-hidden flex items-center justify-center p-1">
+                    <img src={getImagePath('company-id-card.png')} alt="Corporate Employee ID" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="mt-2.5 text-xs font-bold text-slate-200">Corporate ID</div>
                 </div>
               </div>
             </div>

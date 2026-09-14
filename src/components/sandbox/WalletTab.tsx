@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import { Wallet, Lock, Unlock } from 'lucide-react';
 
+const getImagePath = (fileName: string) => {
+  const base = import.meta.env.BASE_URL.endsWith('/') 
+    ? import.meta.env.BASE_URL 
+    : import.meta.env.BASE_URL + '/';
+  return `${base}generated/${fileName}`;
+};
+
 export const WalletTab: React.FC = () => {
   const [walletIsOpen, setWalletIsOpen] = useState(true);
   const [unlockedAssets, setUnlockedAssets] = useState(false);
   const [selectedCard, setSelectedCard] = useState<string>("Aadhaar");
 
   const cardsData: Record<string, { title: string; image: string }> = {
-    "Aadhaar": { title: "Government Aadhaar Card", image: "./generated/aadhaar-card.png" },
-    "PAN Card": { title: "PAN Card", image: "./generated/pan-card.png" },
-    "Driving License": { title: "Driving License & Permit", image: "./generated/driving-licence-card.png" },
-    "Corporate Employee ID": { title: "Corporate Employee ID Card", image: "./generated/company-id-card.png" }
+    "Aadhaar": { title: "Government Aadhaar Card", image: getImagePath('aadhaar-card.png') },
+    "PAN Card": { title: "PAN Card", image: getImagePath('pan-card.png') },
+    "Driving License": { title: "Driving License & Permit", image: getImagePath('driving-licence-card.png') },
+    "Corporate Employee ID": { title: "Corporate Employee ID Card", image: getImagePath('company-id-card.png') }
   };
 
   return (
@@ -63,11 +70,11 @@ export const WalletTab: React.FC = () => {
                 <span>📄 {cardsData[selectedCard].title}</span>
                 <span className="text-emerald-400 text-[10px] font-mono">Verified Scan</span>
               </div>
-              <div className="rounded-xl overflow-hidden border border-slate-800 shadow-2xl max-w-lg mx-auto bg-slate-900">
+              <div className="rounded-xl overflow-hidden border border-slate-800 shadow-2xl max-w-lg mx-auto bg-slate-900 flex items-center justify-center p-2">
                 <img
                   src={cardsData[selectedCard].image}
                   alt={cardsData[selectedCard].title}
-                  className="w-full h-auto object-contain max-h-72"
+                  className="w-full h-auto object-contain max-h-80"
                 />
               </div>
             </div>
