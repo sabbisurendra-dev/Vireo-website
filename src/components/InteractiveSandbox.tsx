@@ -65,7 +65,7 @@ export const InteractiveSandbox: React.FC = () => {
                 }`}
               >
                 <Wallet className="w-3.5 h-3.5" />
-                Goal 3: Digital Leather Wallet
+                Goal 3: Digital Wallet
               </button>
             </div>
 

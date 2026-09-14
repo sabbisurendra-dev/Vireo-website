@@ -52,10 +52,10 @@ export const siteConfig = {
 
   hero: {
     badge: "Vireo AI Live",
-    securityNotice: "Local-First Zero-Trust Architecture",
+    securityNotice: "Local-First Zero-Trust Security",
     titlePrefix: "The Self-Improving",
-    titleGradient: "AI Executive Operating System",
-    subheadline: "Unify personal health intelligence from smartwatches and scales, habit loops, skill acceleration frameworks, and digital ID leather wallet vaults into one high-performance executive system.",
+    titleGradient: "AI Personal Assistant",
+    subheadline: "Unify personal health intelligence from smartwatches and scales, habit loops, skill acceleration frameworks, and digital ID wallet vaults into your personal AI assistant.",
     ctaPrimary: "Launch Live App Prototype",
     ctaSecondary: "Explore Interactive Sandbox",
     metrics: [
@@ -67,7 +67,7 @@ export const siteConfig = {
 
   pillars: {
     sectionBadge: "3 Core Pillars of Vireo AI",
-    sectionTitle: "Designed for Executive Mastery & Long-Term Compounding",
+    sectionTitle: "Designed for Executive Mastery & Personal Growth",
     sectionDesc: "Every feature in Vireo AI is built around 3 fundamental human growth vectors: Health Intelligence, Skill Acceleration, and Secure Asset Governance.",
 
     items: [
@@ -119,16 +119,16 @@ export const siteConfig = {
       },
       {
         id: "wallet",
-        badge: "PILLAR 03 • DIGITAL LEATHER WALLET & VAULT",
-        title: "Tactile Leather Wallet Experience & ",
+        badge: "PILLAR 03 • DIGITAL WALLET & VAULT",
+        title: "Smart Digital Wallet Experience & ",
         highlightTitle: "Encrypted Asset Vault",
-        desc: "Replaces your physical pocket wallet with a digital leather wallet experience holding authenticated scanned copies of your PAN, Aadhaar, Driving License, Corporate IDs, and instant Indian UPI payment shortcuts.",
+        desc: "Replaces your physical pocket wallet with a digital wallet experience holding authenticated scanned copies of your PAN, Aadhaar, Driving License, Corporate IDs, and instant Indian UPI payment shortcuts.",
         accentColor: "amber",
         checkText: "Biometrically protected Assets & Liabilities ledger.",
         features: [
           {
-            title: "Tactile Wallet Experience",
-            subtitle: "Real Leather UI Animation",
+            title: "Smart Wallet Experience",
+            subtitle: "Digital Wallet Animation",
             desc: "Opens smoothly to display verified identity cards, permits & UPI payment apps.",
             iconName: "CreditCard"
           },
@@ -180,12 +180,12 @@ export const siteConfig = {
   },
 
   footer: {
-    brandDescription: "Vireo AI: The self-improving AI executive operating system for high performers.",
+    brandDescription: "Vireo AI: Your self-improving AI personal assistant for high performers.",
     legalNotice: "DPDP Act & GDPR Compliant",
     productLinks: [
       { name: "Health & Habit Intelligence", href: "#offerings" },
       { name: "Skill Acceleration & Learning Feed", href: "#offerings" },
-      { name: "Digital Leather Wallet & Vault", href: "#offerings" },
+      { name: "Digital Wallet & Vault", href: "#offerings" },
       { name: "Launch Live Prototype App", href: "https://sabbisurendra-dev.github.io/vireo_ai/" }
     ],
     legalLinks: [

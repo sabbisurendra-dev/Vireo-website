@@ -12,23 +12,23 @@ export const WalletTab: React.FC = () => {
         <div>
           <h4 className="text-lg font-bold text-white flex items-center gap-2">
             <Wallet className="w-5 h-5 text-amber-400" />
-            Digital Leather Wallet & ID Vault
+            Digital Wallet & ID Vault
           </h4>
-          <p className="text-xs text-slate-400">Tactile leather wallet experience with verified credentials.</p>
+          <p className="text-xs text-slate-400">Digital wallet experience with verified credentials.</p>
         </div>
 
         <button
           onClick={() => setWalletIsOpen(!walletIsOpen)}
           className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-mono font-bold flex items-center gap-1.5"
         >
-          {walletIsOpen ? "Fold Wallet Close" : "Open Leather Wallet"}
+          {walletIsOpen ? "Close Digital Wallet" : "Open Digital Wallet"}
         </button>
       </div>
 
       {walletIsOpen ? (
-        <div className="leather-texture p-6 rounded-2xl border border-amber-900/40 space-y-4">
+        <div className="bg-[#0b0f19] p-6 rounded-2xl border border-amber-900/40 space-y-4 shadow-xl">
           <div className="text-xs font-mono text-amber-300 font-semibold border-b border-amber-900/40 pb-2">
-            👝 Men's Leather Wallet • Inside View
+            👝 Digital Wallet • Inside View
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -89,11 +89,11 @@ export const WalletTab: React.FC = () => {
           )}
         </div>
       ) : (
-        <div className="leather-texture p-12 rounded-2xl border border-amber-900/40 text-center space-y-3">
+        <div className="bg-[#0b0f19] p-12 rounded-2xl border border-amber-900/40 text-center space-y-3 shadow-xl">
           <Wallet className="w-10 h-10 text-amber-400 mx-auto" />
-          <div className="text-base font-bold text-amber-200">Leather Wallet Closed & Folded</div>
+          <div className="text-base font-bold text-amber-200">Digital Wallet Closed</div>
           <p className="text-xs text-slate-400 max-w-md mx-auto">
-            Click "Open Leather Wallet" to unfold your digital documents and IDs.
+            Click "Open Digital Wallet" to view your digital documents and IDs.
           </p>
         </div>
       )}

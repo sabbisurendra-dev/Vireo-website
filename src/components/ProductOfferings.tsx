@@ -103,10 +103,10 @@ export const ProductOfferings: React.FC = () => {
               <div className="p-4 rounded-xl bg-gradient-to-r from-emerald-950/40 to-slate-900 border border-emerald-500/30 space-y-2">
                 <div className="flex items-center justify-between text-xs font-semibold text-emerald-400 font-mono">
                   <span>💡 Habit Correlation Nudge</span>
-                  <span>High Causation (p &lt; 0.01)</span>
+                  <span>98% Data Confidence</span>
                 </div>
                 <p className="text-xs text-slate-300">
-                  Data shows 20 mins sunlight before 9 AM improves your evening sleep latency by 28 mins. Schedule a morning walk today!
+                  Data shows 20 mins of morning sunlight before 9 AM helps you fall asleep 28 mins faster tonight. Take a quick morning walk today!
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export const ProductOfferings: React.FC = () => {
               <div className="space-y-3">
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">1. AI Agent Architecture</span>
+                    <span className="text-slate-200">1. AI Agent Development</span>
                     <span className="text-blue-400 font-mono">78%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -144,7 +144,7 @@ export const ProductOfferings: React.FC = () => {
 
                 <div className="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
                   <div className="flex justify-between text-xs font-semibold mb-1">
-                    <span className="text-slate-200">2. System Architecture & Spec Drafting</span>
+                    <span className="text-slate-200">2. System Design & Spec Drafting</span>
                     <span className="text-blue-400 font-mono">92%</span>
                   </div>
                   <div className="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
@@ -201,7 +201,7 @@ export const ProductOfferings: React.FC = () => {
           </div>
         </div>
 
-        {/* Pillar 3: AI Digital Leather Wallet & Asset Vault */}
+        {/* Pillar 3: AI Digital Wallet & Asset Vault */}
         <div className="glass-panel rounded-3xl p-6 sm:p-10 border border-slate-800/90 relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full filter blur-3xl pointer-events-none group-hover:bg-amber-500/15 transition-all"></div>
           
@@ -241,12 +241,12 @@ export const ProductOfferings: React.FC = () => {
               </div>
             </div>
 
-            {/* Visual Leather Wallet Card */}
-            <div className="lg:col-span-6 leather-texture rounded-2xl p-6 space-y-4 border border-amber-900/40 relative">
+            {/* Visual Smart Digital Wallet Card */}
+            <div className="bg-[#0b0f19] rounded-2xl p-6 space-y-4 border border-amber-900/40 relative shadow-2xl">
               <div className="flex items-center justify-between border-b border-amber-900/40 pb-3">
                 <div className="flex items-center gap-2">
                   <Wallet className="w-5 h-5 text-amber-400" />
-                  <span className="text-sm font-bold text-amber-200">Digital Leather Wallet</span>
+                  <span className="text-sm font-bold text-amber-200">Smart Digital Wallet</span>
                 </div>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   AES-256 ENCRYPTED
